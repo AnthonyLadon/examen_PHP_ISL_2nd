@@ -1,0 +1,207 @@
+body{
+    font-size: 12px;
+}
+.container{
+    max-width: 1024px;
+    width: auto;
+}
+#content{
+	margin-top: 20px;
+	font-size: 1.1em;
+}
+#content h5{
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size:1.2em;
+	margin-bottom: 0px;
+}
+.red{
+    color: red;
+}
+.missingstar{
+    color: red;
+    font-variant-position: super;
+}
+.missingfield{
+    display: block;
+    color: #555;
+    border-radius: 10px;
+    font-family: Tahoma,Geneva,Arial,sans-serif;font-size:11px;
+    padding: 10px 10px 10px 36px;
+    margin: -10px 0px 10px 0px;
+}
+.missingfield b{
+    font-weight:bold;
+    text-transform:uppercase;
+}
+.missingfield p{
+    font-size: 1.5em;
+}
+
+.error {
+    background:#ffecec url('../images/icons/error.png') no-repeat 10px 50%;
+    border:1px solid #f5aca6;
+}
+.success {
+    background:#e9ffd9 url('../images/icons/success.png') no-repeat 10px 50%;
+    border:1px solid #a6ca8a;
+}
+.warning {
+    background:#fff8c4 url('../images/icons/warning.png') no-repeat 10px 50%;
+    border:1px solid #f2c779;
+}
+.notice {
+    background:#e3f7fc url('../images/icons/notice.png') no-repeat 10px 50%;
+    border:1px solid #8ed9f6;
+}
+
+.input_long{
+    width: 68%;
+}
+.input_short{
+    width: 28%;
+}
+.bt-action{
+	display: inline-block;
+	padding: 2px 5px;
+	text-align: center;
+	border-radius: 5px;
+	background-color: #fff;
+	text-decoration: none;
+	border: 1px solid #fff;
+}
+.bt-action:hover{
+	border: 1px solid #1EAEDB;
+}
+
+
+
+
+
+
+.nav-hide {
+    top: -56px;
+}
+
+.nav-show {
+    top: 0;
+}
+
+/* main navigation */
+nav {
+    /*position: fixed;*/
+    width: 100%;
+    z-index: 10000;
+
+    background-color: #fff;
+    border-bottom: 1px solid #dcdcdc;
+
+    transition: top 0.2s ease-in-out;
+}
+
+nav ul {
+    margin: 0;
+    background-color: #fff;
+    z-index: 9999;
+}
+
+nav ul li {
+    display: inline;
+    float: left;
+    position: relative;
+    margin: 0;
+
+    list-style-type: none;
+    z-index: 9998;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 14px 16px;
+
+    color: #757575;
+    font-size: 1.7rem;
+    text-decoration: none;
+
+    transition: 0.2s;
+    z-index: 9997;
+}
+
+/* add caret for drop menu */
+nav ul > li a:not(:only-child):after { content: '\00a0\00a0▼'; font-size: 0.8rem; vertical-align: middle; }
+
+/* sub menu */
+nav ul ul {
+    position: absolute;
+    min-width: 180px;
+
+    height: 0px;
+    overflow: hidden; /* hide sub menu */
+}
+
+nav ul li:hover ul {
+    height: auto;
+    overflow: visible; /* show sub menu */
+
+    border: 1px solid #dcdcdc;
+}
+
+nav ul ul li {
+    display: list-item;
+    float: none;
+}
+
+nav ul ul li a {
+    display: block;
+}
+
+/* Change background color of links on hover */
+nav ul li a:hover {
+    background-color: #eee;
+    color: #757575;
+}
+
+/* Float right the list item that should be right aligned */
+nav ul li.right { float: right; }
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+nav ul li.icon { display: none; }
+
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:880px) {
+    nav ul li:not(:first-child) { display: none; }
+    nav ul li.icon {
+        float: right;
+        display: inline-block;
+    }
+}
+
+/* The "mobile" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the nav look good on small screens */
+@media screen and (max-width:880px) {
+    nav.mobile ul { /* position: relative; */ }
+    nav.mobile ul li.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    nav.mobile ul li {
+        float: none;
+        display: inline;
+    }
+    nav.mobile ul li a {
+        display: block;
+        text-align: left;
+    }
+    nav.mobile ul li ul {
+        position: relative;
+        height: auto;
+        overflow: visible;
+        padding-left: 20px;
+    }
+    nav.mobile ul li:hover ul {
+        border: none;
+    }
+    nav.mobile ul li.right {
+        float: none;
+    }
+}

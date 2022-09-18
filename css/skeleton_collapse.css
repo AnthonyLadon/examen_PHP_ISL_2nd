@@ -1,0 +1,34 @@
+
+
+/* For devices larger than 550px */
+@media (min-width: 550px) {
+  .collapse .column,
+  .collapse .columns {
+    margin-left: 0; }
+  .collapse .column:first-child,
+  .collapse .columns:first-child {
+    margin-left: 0; }
+
+  .collapse .one.column,
+  .collapse .one.columns                    { width: 8.3333333333%; }
+  .collapse .two.columns                    { width: 16.6666666667%; }
+  .collapse .three.columns                  { width: 25%;            }
+  .collapse .four.columns                   { width: 33.3333333333%; }
+  .collapse .five.columns                   { width: 41.6666666667%; }
+  .collapse .six.columns                    { width: 50%;            }
+  .collapse .seven.columns                  { width: 58.3333333333%; }
+  .collapse .eight.columns                  { width: 66.6666666667%; }
+  .collapse .nine.columns                   { width: 75%;          }
+  .collapse .ten.columns                    { width: 83.3333333333%; }
+  .collapse .eleven.columns                 { width: 91.6666666667%; }
+  .collapse .twelve.columns                 { width: 100%; margin-left: 0; }
+
+  .collapse .one-third.column               { width: 33.3333333333%; }
+  .collapse .two-thirds.column              { width: 66.6666666667%; }
+
+  .collapse .one-half.column                { width: 50%; }
+
+
+}
+
+
